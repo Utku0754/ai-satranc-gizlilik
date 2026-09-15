@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Satranç — Destek</title>
+<meta name="description" content="AI Satranç destek sayfası: sık sorulan sorular ve geliştiriciyle iletişim.">
+<style>
+  :root{ --bg:#ffffff; --fg:#1d1d1f; --fg2:#515154; --line:#d2d2d7; --accent:#c8102e; --card:#f5f5f7; }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#000000; --fg:#f5f5f7; --fg2:#a1a1a6; --line:#38383c; --accent:#ff6b6b; --card:#1c1c1e; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px; margin:0 auto; padding:48px 20px 80px}
+  header{border-bottom:1px solid var(--line); padding-bottom:24px; margin-bottom:32px}
+  h1{font-size:32px; line-height:1.2; margin:0 0 8px; letter-spacing:-0.02em}
+  .meta{color:var(--fg2); font-size:15px; margin:0}
+  .lang{margin-top:14px}
+  .lang a{color:var(--accent); text-decoration:none; font-weight:500}
+  .lang a:hover{text-decoration:underline}
+  h2{font-size:20px; margin:36px 0 12px; letter-spacing:-0.01em}
+  p{margin:0 0 14px; color:var(--fg2)}
+  p.lead{font-size:18px; color:var(--fg)}
+  ul{margin:0 0 16px; padding-left:22px; color:var(--fg2)}
+  li{margin-bottom:7px}
+  strong{color:var(--fg)}
+  .note{background:var(--card); border-radius:12px; padding:16px 18px; margin:16px 0}
+  .note p:last-child{margin-bottom:0}
+  a{color:var(--accent)}
+  footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--fg2); font-size:14px}
+
+  details{background:var(--card); border-radius:12px; padding:14px 18px; margin:10px 0}
+  summary{cursor:pointer; font-weight:600; color:var(--fg)}
+  details p{margin:10px 0 0}
+  .cta{display:inline-block; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; padding:12px 20px; border-radius:980px; margin:6px 0 10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>AI Satranç — Destek</h1>
+    <p class="meta">Sıfırdan öğrenen yapay zekâ · iPhone, iPad ve Mac</p>
+    <p class="lang"><a href="../en/support/">Read in English</a></p>
+  </header>
+
+  <p class="lead">Bir sorun mu yaşadın, bir fikrin mi var? Doğrudan geliştiriciye yaz; genellikle 2 iş günü içinde yanıt verilir.</p>
+  <a class="cta" href="mailto:poy.utku2004@gmail.com?subject=AI%20Satran%C3%A7%20Destek">E-posta gönder</a>
+  <p>poy.utku2004@gmail.com</p>
+
+  <h2>Sık Sorulan Sorular</h2>
+
+  <details open>
+    <summary>Yapay zekâ neden bu kadar kötü oynuyor?</summary>
+    <p>Bilerek böyle. AI Satranç'ta hazır bir satranç motoru yok: yapay zekânın sinir ağı ilk açılışta rastgele sayılarla doğar ve yalnızca oynadıkça öğrenir. İlk maçlarda acemi olması, öğrenmenin gerçekten sıfırdan başladığının kanıtıdır.</p>
+  </details>
+
+  <details>
+    <summary>Nasıl daha hızlı öğrenmesini sağlarım?</summary>
+    <p><strong>Antrenman</strong> sekmesinde <strong>Antrenmanı Başlat</strong>'a bas. Yapay zekâ kendine karşı maç oynar ve her maçtan sonra öğrenir. Mac'te bu en hızlı yoldur. Sen de maç oynadıkça yapay zekâ o maçlardan öğrenir.</p>
+  </details>
+
+  <details>
+    <summary>Gerçekten öğrendiğini nereden bileceğim?</summary>
+    <p><strong>Gelişim</strong> sekmesi öğrenme eğrilerini, eğitim adımlarını ve sınav sonuçlarını gösterir. Yeni beyin belli aralıklarla eski hâline karşı turnuvaya girer; açıkça kötüleşmişse öğrendiği geri alınır.</p>
+  </details>
+
+  <details>
+    <summary>"Bu cihazda öğrenme kullanılamıyor" uyarısı görüyorum.</summary>
+    <p>Cihaz üstü eğitim Metal grafik işlemcisini kullanır. Metal'in desteklenmediği ortamlarda (ör. iOS Simulator) uygulama yalnızca oynanır.</p>
+  </details>
+
+  <details>
+    <summary>"Ortak beyin" nedir, verilerim paylaşılıyor mu?</summary>
+    <p>İsteğe bağlı bu özellik açıkken yalnızca öğrenmenin sayısal özeti (ağırlık farkı) ve rastgele bir kurulum numarası paylaşılır. Maçların, hamlelerin ve kişisel bilgilerin cihazından çıkmaz. <strong>Gelişim → Ortak beyne katıl</strong> ayarından kapatabilirsin. Ayrıntılar için <a href="../">gizlilik politikası</a>.</p>
+  </details>
+
+  <details>
+    <summary>Yapay zekâyı sıfırlayabilir miyim?</summary>
+    <p>Uygulamayı silip yeniden yüklemek beyni, arşivi ve istatistikleri tamamen sıfırlar; yapay zekâ yeniden rastgele doğar.</p>
+  </details>
+
+  <details>
+    <summary>Hesap, reklam veya satın alma var mı?</summary>
+    <p>Hayır. Hesap, giriş, reklam, analitik veya uygulama içi satın alma yoktur. İnternet olmadan da çalışır.</p>
+  </details>
+
+  <footer>AI Satranç · iPhone, iPad &amp; Mac · <a href="../">Gizlilik Politikası</a> · <a href="../en/support/">English</a></footer>
+</div>
+</body>
+</html>

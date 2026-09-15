@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Satranç — Support</title>
+<meta name="description" content="AI Satranç support: frequently asked questions and developer contact.">
+<style>
+  :root{ --bg:#ffffff; --fg:#1d1d1f; --fg2:#515154; --line:#d2d2d7; --accent:#c8102e; --card:#f5f5f7; }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#000000; --fg:#f5f5f7; --fg2:#a1a1a6; --line:#38383c; --accent:#ff6b6b; --card:#1c1c1e; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px; margin:0 auto; padding:48px 20px 80px}
+  header{border-bottom:1px solid var(--line); padding-bottom:24px; margin-bottom:32px}
+  h1{font-size:32px; line-height:1.2; margin:0 0 8px; letter-spacing:-0.02em}
+  .meta{color:var(--fg2); font-size:15px; margin:0}
+  .lang{margin-top:14px}
+  .lang a{color:var(--accent); text-decoration:none; font-weight:500}
+  .lang a:hover{text-decoration:underline}
+  h2{font-size:20px; margin:36px 0 12px; letter-spacing:-0.01em}
+  p{margin:0 0 14px; color:var(--fg2)}
+  p.lead{font-size:18px; color:var(--fg)}
+  ul{margin:0 0 16px; padding-left:22px; color:var(--fg2)}
+  li{margin-bottom:7px}
+  strong{color:var(--fg)}
+  .note{background:var(--card); border-radius:12px; padding:16px 18px; margin:16px 0}
+  .note p:last-child{margin-bottom:0}
+  a{color:var(--accent)}
+  footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--fg2); font-size:14px}
+
+  details{background:var(--card); border-radius:12px; padding:14px 18px; margin:10px 0}
+  summary{cursor:pointer; font-weight:600; color:var(--fg)}
+  details p{margin:10px 0 0}
+  .cta{display:inline-block; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; padding:12px 20px; border-radius:980px; margin:6px 0 10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>AI Satranç — Support</h1>
+    <p class="meta">The chess AI that learns from zero · iPhone, iPad and Mac</p>
+    <p class="lang"><a href="../../destek/">Türkçe oku</a></p>
+  </header>
+
+  <p class="lead">Found a problem or have an idea? Write to the developer directly — replies usually arrive within 2 business days.</p>
+  <a class="cta" href="mailto:poy.utku2004@gmail.com?subject=AI%20Satran%C3%A7%20Support">Send an email</a>
+  <p>poy.utku2004@gmail.com</p>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <details open>
+    <summary>Why does the AI play so badly?</summary>
+    <p>On purpose. AI Satranç ships with no chess engine: the AI's neural network is born with random numbers on first launch and only learns by playing. Its clumsy early games are proof that learning really starts from zero.</p>
+  </details>
+
+  <details>
+    <summary>How do I make it learn faster?</summary>
+    <p>Open the <strong>Training</strong> tab and tap <strong>Start Training</strong>. The AI plays against itself and learns after every game — on a Mac this is the fastest way. It also learns from every game you play against it.</p>
+  </details>
+
+  <details>
+    <summary>How do I know it is really learning?</summary>
+    <p>The <strong>Progress</strong> tab shows learning curves, training steps and match-test results. At regular intervals the new brain plays a tournament against its older self; if it has clearly gotten worse, the learning is rolled back.</p>
+  </details>
+
+  <details>
+    <summary>I see "Learning is unavailable on this device".</summary>
+    <p>On-device training uses the Metal GPU. Where Metal isn't supported (for example the iOS Simulator), the app can be played but does not learn.</p>
+  </details>
+
+  <details>
+    <summary>What is the "shared brain"? Is my data shared?</summary>
+    <p>When this optional feature is on, only a numeric summary of learning (a weight difference) and a random install number are shared. Your games, moves and personal data never leave your device. Turn it off under <strong>Progress → Join the shared brain</strong>. See the <a href="../">privacy policy</a> for details.</p>
+  </details>
+
+  <details>
+    <summary>Can I reset the AI?</summary>
+    <p>Deleting and reinstalling the app fully resets the brain, archive and statistics — the AI is born random again.</p>
+  </details>
+
+  <details>
+    <summary>Is there an account, ads or in-app purchases?</summary>
+    <p>No. No account, sign-in, ads, analytics or in-app purchases. Everything works offline.</p>
+  </details>
+
+  <footer>AI Satranç · iPhone, iPad &amp; Mac · <a href="../">Privacy Policy</a> · <a href="../../destek/">Türkçe</a></footer>
+</div>
+</body>
+</html>
