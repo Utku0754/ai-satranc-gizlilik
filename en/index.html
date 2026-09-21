@@ -54,14 +54,14 @@
   <p>Deleting the app removes all of it from your device.</p>
 
   <h2>2. The &ldquo;Collective Brain&rdquo; Feature (Optional)</h2>
-  <p>The app includes an optional feature that merges your AI&rsquo;s learning with that of other players. You can turn it off at any time under <strong>Progress → Join the collective brain</strong>. While it is off, the app runs entirely locally and sends no data at all.</p>
+  <p>The app includes an optional feature that merges your AI&rsquo;s learning with that of other players. You can turn it off at any time under <strong>Settings → Join the collective brain</strong> (in version 1.0: at the bottom of the <strong>Progress</strong> tab). While it is off, the app runs entirely locally and sends no data at all.</p>
   <p>While it is on, only these two things are sent:</p>
   <ul>
     <li><strong>The numerical difference of the neural network weights.</strong> This is a list of numbers describing how much the values in the AI&rsquo;s brain changed. It contains no games, moves, text or personal information, and the games you played cannot be reconstructed from it.</li>
     <li><strong>A randomly generated installation number.</strong> Created the first time the app launches, it is unrelated to your identity, your device or your Apple account. Its only purpose is to keep a single device from influencing the shared model disproportionately. Deleting and reinstalling the app generates a new one.</li>
   </ul>
   <div class="note">
-    <p>This data is stored in Apple&rsquo;s <strong>CloudKit</strong> infrastructure. No separate server is used.</p>
+    <p>This data is stored in Apple&rsquo;s <strong>CloudKit</strong> infrastructure. No separate server is used. CloudKit stamps every record written to its public database with an <strong>anonymous user number</strong> tied to the uploader&rsquo;s iCloud account; it does not contain your name or email, but it is the same for all contributions from the same account. The app uses it only to avoid counting one person&rsquo;s contribution more than once.</p>
   </div>
 
   <h2>3. What Is Not Collected</h2>

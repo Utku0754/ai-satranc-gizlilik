@@ -58,14 +58,14 @@
   <p>Uygulamayı silersen bunların tamamı cihazından silinir.</p>
 
   <h2>2. &ldquo;Ortak Beyin&rdquo; Özelliği (İsteğe Bağlı)</h2>
-  <p>Uygulamada, yapay zekânın öğrenimini diğer oyuncularla birleştiren isteğe bağlı bir özellik vardır. <strong>Gelişim → Ortak beyne katıl</strong> ayarından istediğin an kapatabilirsin. Kapalıyken uygulama tamamen yerel çalışır ve hiçbir veri gönderilmez.</p>
+  <p>Uygulamada, yapay zekânın öğrenimini diğer oyuncularla birleştiren isteğe bağlı bir özellik vardır. <strong>Ayarlar → Ortak beyne katıl</strong> (1.0 sürümünde: <strong>Gelişim</strong> sekmesinin altında) ayarından istediğin an kapatabilirsin. Kapalıyken uygulama tamamen yerel çalışır ve hiçbir veri gönderilmez.</p>
   <p>Özellik açıkken yalnızca şu iki şey gönderilir:</p>
   <ul>
     <li><strong>Sinir ağı ağırlıklarının sayısal farkı.</strong> Bu, yapay zekânın beynindeki sayıların ne kadar değiştiğini gösteren bir sayı dizisidir. İçinde maç, hamle, metin veya kişisel bilgi bulunmaz; oynadığın partiler bu sayılardan geri elde edilemez.</li>
     <li><strong>Rastgele üretilmiş bir kurulum numarası.</strong> Uygulama ilk açıldığında üretilen, kimliğinle, cihazınla veya Apple hesabınla ilişkili olmayan rastgele bir numaradır. Tek işlevi, tek bir cihazın ortak modeli orantısız biçimde etkilemesini önlemektir. Uygulamayı silip yeniden kurduğunda yeni bir numara üretilir.</li>
   </ul>
   <div class="note">
-    <p>Bu veriler Apple&rsquo;ın <strong>CloudKit</strong> altyapısında saklanır. Ayrı bir sunucu kullanılmaz.</p>
+    <p>Bu veriler Apple&rsquo;ın <strong>CloudKit</strong> altyapısında saklanır. Ayrı bir sunucu kullanılmaz. CloudKit, herkese açık veritabanına yazılan her kaydı yükleyenin iCloud hesabına bağlı <strong>anonim bir kullanıcı numarasıyla</strong> damgalar; bu numara adını ya da e‑postanı içermez, ama aynı hesaptan gelen katkılar için aynıdır. Uygulama bu numarayı yalnızca bir kişinin katkısını birden fazla kez saymamak için kullanır.</p>
   </div>
 
   <h2>3. Toplanmayanlar</h2>
