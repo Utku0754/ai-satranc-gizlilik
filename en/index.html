@@ -37,31 +37,31 @@
 <div class="wrap">
   <header>
     <h1>AI Satranç — Privacy Policy</h1>
-    <p class="meta">Last updated: 21 September 2026</p>
+    <p class="meta">Last updated: 25 September 2026</p>
     <p class="lang"><a href="../">Türkçe oku</a></p>
   </header>
 
-  <p class="lead">AI Satranç does not collect your personal data. No account, no sign-in, and no information from you is required.</p>
+  <p class="lead">AI Satranç does not collect your personal data. No account, no sign-in, and no information from you is required. To train the collective brain, only the moves of finished games are sent — not who you are.</p>
 
   <h2>1. Data That Stays on Your Device</h2>
-  <p>The following is stored only on your own device and is never transmitted:</p>
+  <p>The following is stored only on your own device and is not transmitted:</p>
   <ul>
-    <li>The games you play and the moves you make</li>
     <li>Your game archive and statistics</li>
-    <li>The AI&rsquo;s learning history</li>
     <li>Your app settings</li>
+    <li>Your unfinished game</li>
   </ul>
   <p>Deleting the app removes all of it from your device.</p>
 
   <h2>2. The &ldquo;Collective Brain&rdquo; Feature</h2>
-  <p>The app merges your AI&rsquo;s learning with that of other players: every player&rsquo;s brain is connected to the collective brain, so what others have learned reaches you and what you have learned reaches them. In version 1.0 the feature can be turned off with the <strong>Join the collective brain</strong> setting at the bottom of the <strong>Progress</strong> tab; in later versions it is on for everyone and has no separate setting. If you are not signed in to iCloud on your device, or the app&rsquo;s iCloud access is switched off in your device settings, no contribution is sent; the app keeps working.</p>
-  <p>As part of this feature, only these two things are sent:</p>
+  <p>All players raise a single AI together. For this, <strong>version 1.2 and later</strong> send the following to the app&rsquo;s own server:</p>
   <ul>
-    <li><strong>The numerical difference of the neural network weights.</strong> This is a list of numbers describing how much the values in the AI&rsquo;s brain changed. It contains no games, moves, text or personal information, and the games you played cannot be reconstructed from it.</li>
-    <li><strong>A randomly generated installation number.</strong> Created the first time the app launches, it is unrelated to your identity, your device or your Apple account. Its only purpose is to keep a single device from influencing the shared model disproportionately. Deleting and reinstalling the app generates a new one.</li>
+    <li><strong>The moves and result of finished games.</strong> For example &ldquo;e2e4, e7e5, … — White won&rdquo;. Both the games you play and the training games the AI plays against itself are sent. Apart from the time the game reaches the server, nothing else is attached.</li>
+    <li><strong>A randomly generated device number.</strong> Created by the app itself, it has no connection to your name, email, Apple/iCloud account or your device&rsquo;s hardware identifiers. Its only purpose is to see whether a single device is influencing the collective brain disproportionately. Deleting and reinstalling the app generates a new one.</li>
+    <li><strong>The AI&rsquo;s weights (once).</strong> If your device has an AI that was trained before the collective brain moved to this system, its numerical weights are sent once as a &ldquo;candidate&rdquo;. The candidate is tested by playing games against the collective brain; if it is stronger, it becomes the collective brain. Weights are just a list of numbers and contain no personal information.</li>
   </ul>
+  <p>The collective brain is trained on these games and its new version is downloaded to everyone&rsquo;s device. Without an internet connection, games wait on your device and are sent once you are online.</p>
   <div class="note">
-    <p>This data is stored in Apple&rsquo;s <strong>CloudKit</strong> infrastructure. No separate server is used. CloudKit stamps every record written to its public database with an <strong>anonymous user number</strong> tied to the uploader&rsquo;s iCloud account; it does not contain your name or email, but it is the same for all contributions from the same account. The app uses it only to avoid counting one person&rsquo;s contribution more than once.</p>
+    <p>The data is stored on <strong>Vercel</strong> infrastructure (Vercel Inc., USA). Games are used only to train the AI; they are never sold, shared, or used for advertising or tracking. In <strong>version 1.1 and earlier</strong>, the collective brain used Apple&rsquo;s CloudKit and sent only weight differences (no games); that path is closed with the update.</p>
   </div>
 
   <h2>3. What Is Not Collected</h2>
@@ -71,11 +71,13 @@
     <li>Contacts, photos or other app data</li>
     <li>Advertising identifiers</li>
     <li>Usage analytics</li>
+    <li>Your device&rsquo;s hardware identifiers or your Apple/iCloud account</li>
   </ul>
   <p>The app contains no advertising network, no analytics tool and no other third-party software. No user tracking is performed.</p>
+  <p>Because the games that are sent are not linked to your identity, we cannot tell which of them are yours; they therefore cannot be singled out and deleted per person.</p>
 
   <h2>4. Children</h2>
-  <p>The app is suitable for all ages and collects no personal data from children either.</p>
+  <p>The app is suitable for all ages. No personal data is collected from anyone, including children; the game moves that are sent do not identify a person.</p>
 
   <h2>5. Changes</h2>
   <p>If this policy changes, this page will be updated and the date above will be revised.</p>

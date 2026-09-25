@@ -41,31 +41,31 @@
 <div class="wrap">
   <header>
     <h1>AI Satranç — Gizlilik Politikası</h1>
-    <p class="meta">Son güncelleme: 21 Eylül 2026</p>
+    <p class="meta">Son güncelleme: 25 Eylül 2026</p>
     <p class="lang"><a href="./en/">Read in English</a></p>
   </header>
 
-  <p class="lead">AI Satranç, kişisel verilerini toplamaz. Hesap açman, giriş yapman veya herhangi bir bilgi vermen gerekmez.</p>
+  <p class="lead">AI Satranç, kişisel verilerini toplamaz. Hesap açman, giriş yapman veya herhangi bir bilgi vermen gerekmez. Ortak beyni eğitmek için yalnızca oynanan maçların hamleleri gönderilir — kim olduğun değil.</p>
 
   <h2>1. Cihazında Kalan Veriler</h2>
-  <p>Aşağıdakiler yalnızca kendi cihazında saklanır ve hiçbir zaman gönderilmez:</p>
+  <p>Aşağıdakiler yalnızca kendi cihazında saklanır ve gönderilmez:</p>
   <ul>
-    <li>Oynadığın maçlar ve hamleler</li>
     <li>Maç arşivin ve istatistiklerin</li>
-    <li>Yapay zekânın öğrenme geçmişi</li>
     <li>Uygulama ayarların</li>
+    <li>Yarıda kalmış maçın</li>
   </ul>
   <p>Uygulamayı silersen bunların tamamı cihazından silinir.</p>
 
   <h2>2. &ldquo;Ortak Beyin&rdquo; Özelliği</h2>
-  <p>Uygulama, yapay zekânın öğrenimini diğer oyuncularınkiyle birleştirir: her oyuncunun beyni ortak beyne bağlıdır ve başkalarının öğrendikleri sana, senin öğrendiklerin başkalarına ulaşır. 1.0 sürümünde bu özellik <strong>Gelişim</strong> sekmesinin altındaki <strong>Ortak beyne katıl</strong> ayarından kapatılabilir; sonraki sürümlerde özellik herkes için açıktır ve ayrı bir ayarı yoktur. Cihazında iCloud&rsquo;a giriş yapılmamışsa ya da cihaz ayarlarından uygulamanın iCloud erişimi kapatılmışsa hiçbir katkı gönderilmez; uygulama yine çalışır.</p>
-  <p>Bu özellik kapsamında yalnızca şu iki şey gönderilir:</p>
+  <p>Bütün oyuncular tek bir yapay zekâyı birlikte yetiştirir. Bunun için <strong>1.2 ve sonraki sürümlerde</strong> şu veriler uygulamanın kendi sunucusuna gönderilir:</p>
   <ul>
-    <li><strong>Sinir ağı ağırlıklarının sayısal farkı.</strong> Bu, yapay zekânın beynindeki sayıların ne kadar değiştiğini gösteren bir sayı dizisidir. İçinde maç, hamle, metin veya kişisel bilgi bulunmaz; oynadığın partiler bu sayılardan geri elde edilemez.</li>
-    <li><strong>Rastgele üretilmiş bir kurulum numarası.</strong> Uygulama ilk açıldığında üretilen, kimliğinle, cihazınla veya Apple hesabınla ilişkili olmayan rastgele bir numaradır. Tek işlevi, tek bir cihazın ortak modeli orantısız biçimde etkilemesini önlemektir. Uygulamayı silip yeniden kurduğunda yeni bir numara üretilir.</li>
+    <li><strong>Biten maçların hamleleri ve sonucu.</strong> Örneğin &ldquo;e2e4, e7e5, … — beyaz kazandı&rdquo;. Senin oynadığın maçlarla, yapay zekânın kendi kendine oynadığı antrenman maçları gönderilir. Maçın tarihi dışında (sunucuya ulaştığı an) başka bir bilgi eklenmez.</li>
+    <li><strong>Rastgele üretilmiş bir cihaz numarası.</strong> Uygulamanın kendi ürettiği, adınla, e‑postanla, Apple/iCloud hesabınla ya da cihazının donanım kimliğiyle hiçbir ilişkisi olmayan rastgele bir numaradır. Tek işlevi, tek bir cihazın ortak beyni orantısız biçimde etkileyip etkilemediğini görebilmektir. Uygulamayı silip yeniden kurduğunda yeni bir numara üretilir.</li>
+    <li><strong>Yapay zekânın ağırlıkları (bir kereliğine).</strong> Cihazında, ortak beyin bu sisteme geçmeden önce eğitilmiş bir yapay zekâ varsa, onun sayısal ağırlıkları bir kereliğine &ldquo;aday&rdquo; olarak gönderilir. Aday, ortak beyne karşı maç yaparak sınanır; daha güçlüyse ortak beyin o olur. Ağırlıklar yalnızca sayı dizisidir; içinde kişisel bilgi yoktur.</li>
   </ul>
+  <p>Ortak beyin bu maçlarla eğitilir ve yeni sürümü herkesin cihazına indirilir. İnternet yokken maçlar cihazında bekler ve bağlantı gelince gönderilir.</p>
   <div class="note">
-    <p>Bu veriler Apple&rsquo;ın <strong>CloudKit</strong> altyapısında saklanır. Ayrı bir sunucu kullanılmaz. CloudKit, herkese açık veritabanına yazılan her kaydı yükleyenin iCloud hesabına bağlı <strong>anonim bir kullanıcı numarasıyla</strong> damgalar; bu numara adını ya da e‑postanı içermez, ama aynı hesaptan gelen katkılar için aynıdır. Uygulama bu numarayı yalnızca bir kişinin katkısını birden fazla kez saymamak için kullanır.</p>
+    <p>Veriler <strong>Vercel</strong> altyapısında (Vercel Inc., ABD) saklanır; yani yurt dışındaki sunuculara aktarılır. Maçlar yalnızca yapay zekâyı eğitmek için kullanılır; satılmaz, paylaşılmaz, reklam veya takip için kullanılmaz. <strong>1.1 ve önceki sürümlerde</strong> ortak beyin Apple&rsquo;ın CloudKit altyapısını kullanıyordu ve yalnızca ağırlık farkları (maç değil) gönderiliyordu; güncellemeyle birlikte bu yol kapatıldı.</p>
   </div>
 
   <h2>3. Toplanmayanlar</h2>
@@ -75,11 +75,13 @@
     <li>Rehber, fotoğraf veya diğer uygulama verileri</li>
     <li>Reklam tanımlayıcıları</li>
     <li>Kullanım analitiği</li>
+    <li>Cihazının donanım kimliği ya da Apple/iCloud hesabın</li>
   </ul>
   <p>Uygulamada reklam ağı, analitik aracı veya başka bir üçüncü taraf yazılım bulunmaz. Kullanıcı takibi yapılmaz.</p>
+  <p>Gönderilen maçlar kimliğine bağlı olmadığı için hangilerinin sana ait olduğu bizim tarafımızdan belirlenemez; bu yüzden kişiye özel olarak ayıklanıp silinemezler.</p>
 
   <h2>4. Çocuklar</h2>
-  <p>Uygulama her yaş için uygundur ve çocuklardan da hiçbir kişisel veri toplamaz.</p>
+  <p>Uygulama her yaş için uygundur. Kimseden — çocuklar dahil — kişisel veri toplanmaz; gönderilen maç hamleleri kişiyi tanımlamaz.</p>
 
   <h2>5. Değişiklikler</h2>
   <p>Bu politika değişirse bu sayfa güncellenir ve yukarıdaki tarih değiştirilir.</p>
